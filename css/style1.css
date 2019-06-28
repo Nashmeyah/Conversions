@@ -1,0 +1,46 @@
+html
+{
+     background-color: gray;
+}
+body
+{
+    color: black;
+}
+
+.btn 
+{
+    background-color: white;
+}
+
+.drop-dwn-btn
+{
+    position: relative;
+    display: inline-block;
+}
+.btn-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.btn-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-content a:hover 
+{
+    background-color: #ddd;
+}
+.drop-dwn-btn:hover .btn-content 
+{
+    display: block;
+}
+.drop-dwn-btn:hover .btn {background-color: #3e8e41;}
