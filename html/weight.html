@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>
-
-        </title>
-    </head>
-    <body>
+        <meta charset="UTF-8">
+        <title>Weight Conversion</title>
+        <link type="text/css" rel="stylesheet" href="../css/liquids-style.css"></link>
         
+    </head>
+    <body>   
+        <div class="converter-body">
+                <h1 class="converter-title">Weight Converter</h1>
+
+            <input id="input" type="text" placeholder="Input">
+            <span> = </span>
+            <input id="result" type="text" placeholder="Result">
+                <select id="inputType">
+                    <option value="ounce">Ounce</option>
+                    <option value="pound">Pound</option>
+                    <option value="stone">Stone</option>
+                    <option value="milligram">Milligram</option>
+                    <option value="microgram">Microgram</option>
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                    <option value="metricton">Metric Ton</option>                    
+                </select>     
+
+                <select id="resultType">
+                    <option value="ounce">Ounce</option>
+                    <option value="pound">Pound</option>
+                    <option value="stone">Stone</option>
+                    <option value="milligram">Milligram</option>
+                    <option value="microgram">Microgram</option>
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">Kilogram</option>
+                    <option value="metricton">Metric Ton</option>
+                </select>
+        </div>
+
+
+
+        <script src="../js/weight-script.js"></script>
     </body>
 </html>
