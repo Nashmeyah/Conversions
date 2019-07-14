@@ -109,9 +109,88 @@ function myResult() {
 
   //// When user selects microgram conversions
 
+  if (inputTypeValue === "microgram" && resultTypeValue === "microgram") {
+    result.value = input.value;
+  } else if (inputTypeValue === "microgram" && resultTypeValue === "ounce") {
+    result.value = Number(input.value) / 2.835e7;
+  } else if (inputTypeValue === "microgram" && resultTypeValue === "pound") {
+    result.value = Number(input.value) / 4.536e8;
+  } else if (inputTypeValue === "microgram" && resultTypeValue === "stone") {
+    result.value = Number(input.value) / 6.35e9;
+  } else if (
+    inputTypeValue === "microgram" &&
+    resultTypeValue === "milligram"
+  ) {
+    result.value = Number(input.value) / 1000;
+  } else if (inputTypeValue === "microgram" && resultTypeValue === "gram") {
+    result.value = Number(input.value) / 1e6;
+  } else if (inputTypeValue === "microgram" && resultTypeValue === "kilogram") {
+    result.value = Number(input.value) / 1e9;
+  } else if (
+    inputTypeValue === "microgram" &&
+    resultTypeValue === "metricton"
+  ) {
+    result.value = Number(input.value) / 1e12;
+  }
+
   //// When user selects gram conversions
-
+  if (inputTypeValue === "gram" && resultTypeValue === "gram") {
+    result.value = input.value;
+  } else if (inputTypeValue === "gram" && resultTypeValue === "ounce") {
+    result.value = Number(input.value) / 28.35;
+  } else if (inputTypeValue === "gram" && resultTypeValue === "pound") {
+    result.value = Number(input.value) / 453.592;
+  } else if (inputTypeValue === "gram" && resultTypeValue === "stone") {
+    result.value = Number(input.value) / 6350.293;
+  } else if (inputTypeValue === "gram" && resultTypeValue === "milligram") {
+    result.value = Number(input.value) * 1000;
+  } else if (inputTypeValue === "gram" && resultTypeValue === "microgram") {
+    result.value = Number(input.value) * 1e6;
+  } else if (inputTypeValue === "gram" && resultTypeValue === "kilogram") {
+    result.value = Number(input.value) / 1000;
+  } else if (inputTypeValue === "gram" && resultTypeValue === "metricton") {
+    result.value = Number(input.value) / 1e6;
+  }
   //// When user selects kilogram conversions
-
+  if (inputTypeValue === "kilogram" && resultTypeValue === "kilogram") {
+    result.value = input.value;
+  } else if (inputTypeValue === "kilogram" && resultTypeValue === "ounce") {
+    result.value = Number(input.value) * 35.274;
+  } else if (inputTypeValue === "kilogram" && resultTypeValue === "pound") {
+    result.value = Number(input.value) * 2.205;
+  } else if (inputTypeValue === "kilogram" && resultTypeValue === "stone") {
+    result.value = Number(input.value) / 6.35;
+  } else if (inputTypeValue === "kilogram" && resultTypeValue === "milligram") {
+    result.value = Number(input.value) * 1e6;
+  } else if (inputTypeValue === "kilogram" && resultTypeValue === "microgram") {
+    result.value = Number(input.value) * 1e9;
+  } else if (inputTypeValue === "kilogram" && resultTypeValue === "gram") {
+    result.value = Number(input.value) * 1000;
+  } else if (inputTypeValue === "kilogram" && resultTypeValue === "metricton") {
+    result.value = Number(input.value) / 1000;
+  }
   //// When user selects metricton conversions
+  if (inputTypeValue === "metricton" && resultTypeValue === "metricton") {
+    result.value = input.value;
+  } else if (inputTypeValue === "metricton" && resultTypeValue === "ounce") {
+    result.value = Number(input.value) * 35273.962;
+  } else if (inputTypeValue === "metricton" && resultTypeValue === "pound") {
+    result.value = Number(input.value) * 2204.623;
+  } else if (inputTypeValue === "metricton" && resultTypeValue === "stone") {
+    result.value = Number(input.value) * 157.473;
+  } else if (
+    inputTypeValue === "metricton" &&
+    resultTypeValue === "milligram"
+  ) {
+    result.value = Number(input.value) * 1e9;
+  } else if (
+    inputTypeValue === "metricton" &&
+    resultTypeValue === "microgram"
+  ) {
+    result.value = Number(input.value) * 1e12;
+  } else if (inputTypeValue === "metricton" && resultTypeValue === "gram") {
+    result.value = Number(input.value) * 1e6;
+  } else if (inputTypeValue === "metricton" && resultTypeValue === "kilogram") {
+    result.value = Number(input.value) * 1000;
+  }
 }
